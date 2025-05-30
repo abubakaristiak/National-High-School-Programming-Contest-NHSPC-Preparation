@@ -1,10 +1,4 @@
 /*
- * Bismillahir Rahmanir Raheem
- *
- * * * * Coder   : abubakaristiak
- * * * * Created : 2025-05-29 || 23:23:07
- * * * * File    : D_Exciting_Game.cpp
-*//*
 ||-----------------------------------||
 ||        Abu Bakar Istiak           ||
 ||     Chattogram Polytechnic        ||
@@ -47,25 +41,14 @@ using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node
 
 
 void solve() {
-    int l,r; cin >> l >> r;
-    int e=(r/2)-((l-1)/2);
-    int t=r-l+1;
-
-    if(e==0){
-        cout << 0 << endl;
-    }else if(e==t){
-        cout << 1 << endl;
-    }else{
-        int d=__gcd(e,t);
-        cout << e/d << "/" << t/d << endl;
-    }
+    
 }
 
 
 int main() {
     fast();
     int t = 1;
-    cin >> t;
+    // cin >> t;
     while(t--){
         solve();
     }

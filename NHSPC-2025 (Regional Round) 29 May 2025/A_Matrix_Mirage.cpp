@@ -1,17 +1,4 @@
-/*
- * Bismillahir Rahmanir Raheem
- *
- * * * * Coder   : abubakaristiak
- * * * * Created : 2025-05-29 || 21:14:46
- * * * * File    : A_Matrix_Mirage.cpp
-*//*
-||-----------------------------------||
-||        Abu Bakar Istiak           ||
-||     Chattogram Polytechnic        ||
-||        Department of CST          ||
-||    abubakar119147@gmail.com       ||
-||-----------------------------------||
-*/
+// according to gemini
 #include<bits/stdc++.h>
 #include<ext/pb_ds/assoc_container.hpp>
 #include<ext/pb_ds/tree_policy.hpp>
@@ -45,9 +32,23 @@ using namespace __gnu_pbds;
 template <typename T>
 using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
+bool is_valid(int r, int c, int n, int m) {
+    return r >= 0 && r < n && c >= 0 && c < m;
+}
+
+bool find_path(int r, int c, int n, int m, int x, const vector<vector<int>>& v, vector<vector<bool>>& visited) {
+    if (!is_valid(r, c, n, m) || v[r][c] == -1 || visited[r][c]) {
+        return false;
+    }
+    visited[r][c] = true;
+    if (v[r][c] == x) {
+        return true;
+    }
+    return find_path(r + 1, c, n, m, x, v, visited) || find_path(r, c - 1, n, m, x, v, visited);
+}
 
 void solve() {
-    int n,m; cin >> n >> m;
+    int n, m; cin >> n >> m;
     vector<vector<int>> v(n, vector<int>(m));
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
@@ -55,22 +56,14 @@ void solve() {
         }
     }
     int x; cin >> x;
-    int i=0, j=m-1;
-    while (i<n && j>=0)
-    {
-        if(v[i][j]==x){
-            yes;
-            return;
-        }else if(v[i][j]>x){
-            j--;
-        }else{
-            i++;
-        }
-    }
-    no;
-    
-}
 
+    vector<vector<bool>> visited(n, vector<bool>(m, false));
+    if (find_path(0, m - 1, n, m, x, v, visited)) {
+        yes;
+    } else {
+        no;
+    }
+}
 
 int main() {
     fast();
