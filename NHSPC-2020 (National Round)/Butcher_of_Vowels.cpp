@@ -10,7 +10,6 @@
 ||     Chattogram Polytechnic        ||
 ||        Department of CST          ||
 ||    abubakar119147@gmail.com       ||
-||-----------------------------------||
 */
 #include<bits/stdc++.h>
 #include<ext/pb_ds/assoc_container.hpp>
@@ -18,7 +17,6 @@
 
 using namespace std;
 using namespace __gnu_pbds;
-
 #define ll long long
 #define ull unsigned long long
 #define pi pair<ll, ll>
@@ -41,11 +39,8 @@ using namespace __gnu_pbds;
 #define asort(v) sort((v).begin(), (v).end())
 #define rsort(v) sort((v).begin(), (v).end(), greater<>())
 #define fast() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-
 template <typename T>
 using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
-
 void solve() {
     string s; cin >> s;
     int n=s.size();
@@ -59,16 +54,11 @@ void solve() {
         cyes;
     }else cno;
 }
-
-
 int main() {
     fast();
     int t = 1;
     cin >> t;
     while(t--){
         solve();
-    }
     return 0;
-
     // Alhamdulillah
-}
