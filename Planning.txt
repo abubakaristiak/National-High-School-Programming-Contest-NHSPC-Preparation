@@ -1,0 +1,22 @@
+Common Core Topics Across All Three Rounds:
+
+1. Matrix/Array Operations – traversal, submatrix sums, transformations
+2. String Processing – counting, mutation, pattern matching
+3. Graph Algorithms – BFS/DFS, connected components
+4. Greedy – decision making with limited resources
+5. Simulation – step-by-step process simulations
+6. Introductory Dynamic Programming – basic knapsack or optimization
+7. Game Theory – turn-based/gridded gameplay analysis
+
+
+
+
+How to Prep for June 17:
+
+Matrix/Grid Manipulation --> Practice grid walks, submatrix sums, spiral/zig-zag traversal
+String Algorithms --> Practice substring counting, edit operations, rotations
+Graphs --> Brush up on BFS/DFS traversals and identifying connected components
+Greedy --> Try coin-change, scheduling, interval selection problems
+Simulation --> Code problems involving robot/grid movement and event simulation
+Basic DP --> Simple knapsack, coin change, LIS variants
+Game & Combinatorics --> Practice Nim-type logic or simple win/loss determinations
