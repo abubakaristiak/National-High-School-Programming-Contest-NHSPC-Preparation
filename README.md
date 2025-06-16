@@ -76,9 +76,13 @@ g++ A.cpp -o A
 
 ---
 👨‍💻 Maintainer
-Abu Bakar Istiak.
-GitHub: @abubakaristiak.
-Aspiring SDE | Competitive Programmer | C++ Enthusiast.
+
+Abu Bakar Istiak
+
+GitHub: @abubakaristiak
+
+Aspiring SDE | Competitive Programmer | C++ Enthusiast
+
 
 ---
 
