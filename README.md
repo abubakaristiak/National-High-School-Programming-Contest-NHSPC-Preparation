@@ -20,16 +20,17 @@ Visit the [official NHSPC site](https://nhspc.org.bd/home) for more information.
 
 NHSPC-Preparation/
 ├── NHSPC-2020/
-│ ├── A.cpp
-│ └── ...
+│   ├── A.cpp
+│   └── ...
 ├── NHSPC-2025/
-│ ├── 29-May-2025/
-│ │ ├── A.cpp
-│ │ └── ...
-│ └── 30-May-2025/
-│ ├── A.cpp
-│ └── ...
+│   ├── 29-May-2025/
+│   │   ├── A.cpp
+│   │   └── ...
+│   └── 30-May-2025/
+│       ├── A.cpp
+│       └── ...
 └── README.md
+
 
 
 
